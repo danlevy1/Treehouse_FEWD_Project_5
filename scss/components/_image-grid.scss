@@ -1,0 +1,14 @@
+// **************************************
+// components/_images.scss
+// Image grid styles
+// **************************************
+
+#img-grid-container {
+    @include flex-container($direction: row, $wrap: wrap);
+    justify-content: center;
+
+    @include media-query($breakpoint: $desktop-breakpoint) {
+        margin: auto;
+        width: 70%;
+    }
+}

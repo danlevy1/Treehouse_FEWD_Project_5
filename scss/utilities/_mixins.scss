@@ -1,0 +1,26 @@
+// **************************************
+// utilities/_mixins.scss
+// Mixins
+// **************************************
+
+// Formats text
+@mixin text($size, $weight, $color, $line-height) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $line-height;
+}
+
+// Media query
+@mixin media-query($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+// Flexbox settings
+@mixin flex-container($direction, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}

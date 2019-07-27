@@ -1,0 +1,25 @@
+// **************************************
+// components/_search.scss
+// Search box styles
+// **************************************
+
+#search-box {
+    @include text($size: 1rem, $weight: 400, $color: $search-box-text-color, $line-height: null);
+    width: 80%;
+    height: 35px;
+    display: block;
+    border: 1px solid $search-box-border-color;
+    border-radius: 6px;
+    padding-left: 20px;
+    margin: 30px auto;
+
+    // #search-box::placeholder
+    &::placeholder {
+        font-weight: 300;
+        color: $search-box-placeholder-text-color;
+    }
+
+    @include media-query($breakpoint: $desktop-breakpoint) {
+        width: 400px;
+    }
+}
